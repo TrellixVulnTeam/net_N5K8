@@ -163,9 +163,10 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Django server.django" />
       <item itemvalue="Python.manage" />
-      <item itemvalue="Python.tests" />
       <item itemvalue="Python.views" />
+      <item itemvalue="Python.tests" />
     </list>
     <recent_temporary>
       <list>
