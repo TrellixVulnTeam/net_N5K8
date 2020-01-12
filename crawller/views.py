@@ -26,7 +26,7 @@ from crawller.serializers import UserSerializer, GroupSerializer
 
 exploreLink=[]
 links = []
-formats=['jpg','exe','pdf','apk','mp4','mp3','jpeg','png','rar','aspx']
+formats=['jpg','exe','pdf','apk','mp4','mp3','jpeg','png','rar','aspx','sitemap']
 
 
 def readRobots(url):
@@ -123,10 +123,12 @@ def readRobotFromHtml(link):
                 return False
         else:
             return True
+    return True
 def getLinks(url,link):
     browser = mechanicalsoup.StatefulBrowser()
     browser.open(link)
-    allowToCrawl=readRobotFromHtml(link)
+#    allowToCrawl=readRobotFromHtml(link)
+    allowToCrawl=True
     exploreLink.append(link)
     if allowToCrawl:
         aTags=browser.links()
