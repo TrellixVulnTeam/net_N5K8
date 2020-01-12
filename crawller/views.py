@@ -1,8 +1,8 @@
 import urllib
-
 import requests
 from bs4 import BeautifulSoup
 from idlelib import browser
+from urllib.request import urlopen
 import mechanicalsoup
 from threading import Thread
 import  time
@@ -30,9 +30,15 @@ formats=['jpg','exe','pdf','apk','mp4','mp3','jpeg','png','rar','aspx']
 
 
 def readRobots(url):
-    data = urllib.request.urlopen(url+'/robots.txt')
-    robotLink =set()
 
+    try:
+        data = urlopen(url+'/robots.txt')
+    except Exception as e:
+        print("Exepte to open robots",e)
+        data=None
+        pass
+
+    robotLink =set()
     if data:
         for line in data:
             line=line.decode("utf-8")
@@ -58,9 +64,9 @@ def siteMapCrawl(url,link):
             if href not in exploreLink:
                 exploreLink.append(href)
 def str_to_bool(s):
-    if s == 'True' or 'true':
+    if s == 'True' or s=='true':
          return True
-    elif s == 'False' or 'false':
+    elif s == 'False' or s=='false':
          return False
     else:
          raise ValueError
@@ -106,33 +112,46 @@ def crawl(request):
                 continue
 #        return render(request, 'crawl.html', {'links':exploreLink})
     return  Response(exploreLink)
+def readRobotFromHtml(link):
+    webpage = urlopen(str(link)).read()
+    soup = BeautifulSoup(webpage, "lxml")
+    robots = soup.find_all("meta")
+    for robot in robots:
+        if robot.get("name", None) == "robots":
+            content=str(robot.get("content",None)).lower()
+            if 'nofollow' in content:
+                return False
+        else:
+            return True
 def getLinks(url,link):
     browser = mechanicalsoup.StatefulBrowser()
     browser.open(link)
+    allowToCrawl=readRobotFromHtml(link)
     exploreLink.append(link)
-    aTags=browser.links()
-    if aTags:
-        for tag in aTags:
-            href=tag['href']
-            href_part=str(href).split('.')
-            if href_part[-1].lower() not in formats:
-                admision=True
-            else:
-                admision=False
-            if admision:
-                if href.startswith(url):
-                    if href[-1] == "/":
-                        href = href[:-1]
-                    if href not in links:
-                        if href not in exploreLink:
-                            links.append(href)
-                if href.startswith('/'):
-                    href = str(url)+str(href)
-                    if href[-1] == "/":
-                        href = href[:-1]
-                    if href not in links:
-                        if href not in exploreLink:
-                            links.append(href)
+    if allowToCrawl:
+        aTags=browser.links()
+        if aTags:
+            for tag in aTags:
+                href=tag['href']
+                href_part=str(href).split('.')
+                if href_part[-1].lower() not in formats:
+                    admision=True
+                else:
+                    admision=False
+                if admision:
+                    if href.startswith(url):
+                        if href[-1] == "/":
+                            href = href[:-1]
+                        if href not in links:
+                            if href not in exploreLink:
+                                links.append(href)
+                    if href.startswith('/'):
+                        href = str(url)+str(href)
+                        if href[-1] == "/":
+                            href = href[:-1]
+                        if href not in links:
+                            if href not in exploreLink:
+                                links.append(href)
     print("links should visit count",len(links))
     print("expelored count",len(exploreLink))
 

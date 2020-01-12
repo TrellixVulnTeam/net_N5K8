@@ -89,4 +89,30 @@ traitlets==4.3.2
 urllib3==1.23
 wcwidth==0.1.7
 webencodings==0.5.1
-widgetsnbextension==3.4.2
+widgetsnbextension==3.4.
+
+
+        exploreLink.append(link)
+        aTags=browser.links()
+        if aTags:
+            for tag in aTags:
+                href=tag['href']
+                href_part=str(href).split('.')
+                if href_part[-1].lower() not in formats:
+                    admision=True
+                else:
+                    admision=False
+                if admision:
+                    if href.startswith(url):
+                        if href[-1] == "/":
+                            href = href[:-1]
+                        if href not in links:
+                            if href not in exploreLink:
+                                links.append(href)
+                    if href.startswith('/'):
+                        href = str(url)+str(href)
+                        if href[-1] == "/":
+                            href = href[:-1]
+                        if href not in links:
+                            if href not in exploreLink:
+                                links.append(href)

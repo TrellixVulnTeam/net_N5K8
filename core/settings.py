@@ -24,9 +24,28 @@ SECRET_KEY = 'm*g9ur_6)7$+0t%3)&vo62ci@_(3i_+%rq(^cb4n7dbf^f&_fl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["http://127.0.0.1","127.0.0.1","http://localhost","http://localhost:4200" ]
+CORS_ORIGIN_WHITELIST = ("http://127.0.0.1:4200","http://localhost:4200","http://localhost")
+CORS_ALLOW_CREDENTIALS=True
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_METHODS = (
+'DELETE',
+'GET',
+'OPTIONS',
+'PATCH',
+'POST',
+'PUT',)
+CORS_ALLOW_HEADERS = (
+'accept',
+'accept-encoding',
+'authorization',
+'content-type',
+'dnt',
+'origin',
+'user-agent',
+'x-csrftoken',
+'x-requested-with',
+'Access-Control-Allow-Origin',)
 # Applic
 # ation definition
 

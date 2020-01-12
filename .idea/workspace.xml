@@ -6,15 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11bb6a2a-060f-406f-bd65-886c64bdee64" name="Default Changelist" comment="Merge branch 'master' of https://github.com/amirsartipi13/net&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crawller/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawller/templates/allTag.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawller/templates/robots.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawller/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawller/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawller/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawller/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/req.txt" beforeDir="false" afterPath="$PROJECT_DIR$/req.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,14 +60,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/env/Scripts/activate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../netlab" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -282,7 +277,12 @@
       <workItem from="1577958992915" duration="1308000" />
       <workItem from="1578169391777" duration="13278000" />
       <workItem from="1578182711689" duration="1061000" />
-      <workItem from="1578337160047" duration="8588000" />
+      <workItem from="1578337160047" duration="10749000" />
+      <workItem from="1578381858961" duration="4571000" />
+      <workItem from="1578393128184" duration="4628000" />
+      <workItem from="1578653774315" duration="36000" />
+      <workItem from="1578654211299" duration="22000" />
+      <workItem from="1578849358400" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/amirsartipi13/net&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <created>1577953282884</created>
@@ -355,11 +355,11 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="524" y="113" width="929" height="879" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1578338736753" />
-    <state width="1827" height="395" key="DebuggerActiveHint" timestamp="1578340790261">
+    <state width="1827" height="395" key="DebuggerActiveHint" timestamp="1578395010898">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1514" height="324" key="DebuggerActiveHint/0.0.1536.864@0.0.1536.864" timestamp="1577890565767" />
-    <state width="1827" height="395" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1578340790261" />
+    <state width="1827" height="395" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1578395010898" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1577712455649">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -369,65 +369,65 @@
     </state>
     <state x="544" y="188" key="EnvironmentVariablesDialog/0.0.1536.864@0.0.1536.864" timestamp="1577797248201" />
     <state x="723" y="256" width="515" height="472" key="EnvironmentVariablesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1577801776775" />
-    <state x="493" y="229" width="438" height="462" key="FileChooserDialogImpl" timestamp="1577797387609">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="500" y="271" width="438" height="462" key="FileChooserDialogImpl" timestamp="1578654230939">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="493" y="229" width="438" height="462" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1577797387609" />
-    <state x="500" y="271" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1577802197930" />
-    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1578346045715">
+    <state x="500" y="271" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1578654230939" />
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom" timestamp="1578849582802">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577906867305" />
-    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578346045715" />
-    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1578346045714">
+    <state width="1807" height="277" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578849582802" />
+    <state width="1807" height="277" key="GridCell.Tab.0.center" timestamp="1578849582801">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577906867304" />
-    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578346045714" />
-    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1578346045714">
+    <state width="1807" height="277" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578849582801" />
+    <state width="1807" height="277" key="GridCell.Tab.0.left" timestamp="1578849582801">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577906867304" />
-    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578346045714" />
-    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1578346045714">
+    <state width="1807" height="277" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578849582801" />
+    <state width="1807" height="277" key="GridCell.Tab.0.right" timestamp="1578849582801">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577906867305" />
-    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578346045714" />
-    <state width="1807" height="343" key="GridCell.Tab.1.bottom" timestamp="1578344177622">
+    <state width="1807" height="277" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578849582801" />
+    <state width="1807" height="343" key="GridCell.Tab.1.bottom" timestamp="1578400635172">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577906719722" />
-    <state width="1807" height="343" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578344177622" />
-    <state width="1807" height="343" key="GridCell.Tab.1.center" timestamp="1578344177621">
+    <state width="1807" height="343" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578400635172" />
+    <state width="1807" height="343" key="GridCell.Tab.1.center" timestamp="1578400635171">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1577906719722" />
-    <state width="1807" height="343" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578344177621" />
-    <state width="1807" height="343" key="GridCell.Tab.1.left" timestamp="1578344177620">
+    <state width="1807" height="343" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578400635171" />
+    <state width="1807" height="343" key="GridCell.Tab.1.left" timestamp="1578400635170">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1577906719722" />
-    <state width="1807" height="343" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578344177620" />
-    <state width="1807" height="343" key="GridCell.Tab.1.right" timestamp="1578344177622">
+    <state width="1807" height="343" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578400635170" />
+    <state width="1807" height="343" key="GridCell.Tab.1.right" timestamp="1578400635171">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1577906719722" />
-    <state width="1807" height="343" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578344177622" />
+    <state width="1807" height="343" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578400635171" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1577444287773">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.864@0.0.1536.864" timestamp="1577444287773" />
-    <state x="335" y="139" key="SettingsEditor" timestamp="1578337397346">
+    <state x="335" y="139" key="SettingsEditor" timestamp="1578849431559">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="222" y="92" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1577798752673" />
-    <state x="335" y="139" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1578337397346" />
-    <state x="642" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578337161282">
+    <state x="335" y="139" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1578849431559" />
+    <state x="642" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1578849358878">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="477" y="261" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1577903815431" />
-    <state x="642" y="345" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578337161282" />
+    <state x="642" y="345" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578849358878" />
     <state x="751" y="151" width="683" height="764" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577958458950">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -457,6 +457,6 @@
     <SUITE FILE_PATH="coverage/net$activate.coverage" NAME="activate Coverage Results" MODIFIED="1577797402524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/env/Scripts" />
     <SUITE FILE_PATH="coverage/net$manage.coverage" NAME="manage Coverage Results" MODIFIED="1577799526864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/django$settings.coverage" NAME="settings Coverage Results" MODIFIED="1578171441625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core" />
-    <SUITE FILE_PATH="coverage/django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1578345992230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1578849509850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
